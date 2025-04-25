@@ -1,0 +1,45 @@
+PracƟcal 6.2.A 
+
+<?php 
+funcƟon isAllLowercase($str) { 
+ return ctype_lower(str_replace(' ', '', $str)); 
+} 
+ 
+$input = "hello world"; 
+echo isAllLowercase($input) ? "Lowercase<br>" : "Not lowercase<br>"; 
+?> 
+
+PracƟcal 6.2.B 
+
+<?php 
+funcƟon reverseString($str) { 
+ $reversed = ''; 
+ for ($i = strlen($str) - 1; $i >= 0; $i--) { 
+ $reversed .= $str[$i]; 
+ } 
+ return $reversed; 
+} 
+ 
+$input = "hello"; 
+echo "Reversed: " . reverseString($input) . "<br>"; 
+?> 
+
+PracƟcal 6.2.C 
+
+<?php 
+funcƟon removeSpaces($str) { 
+return preg_replace('/\s+/', '', $str); 
+} 
+$input = "he llo wo rld"; 
+echo "Without spaces: " . removeSpaces($input) . "<br>"; 
+?> 
+
+PracƟcal 6.2.D 
+
+<?php 
+funcƟon replaceWord($text, $search, $replace) { 
+return str_ireplace($search, $replace, $text); 
+} 
+$input = "Hello World"; 
+echo replaceWord($input, "world", "PHP") . "<br>"; 
+?> 
