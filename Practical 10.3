@@ -1,0 +1,5 @@
+<?php 
+session_start(); 
+$conn = new mysqli("localhost", "root", "", "employee_db"); 
+if (!isset($_SESSION["user_id"])) exit("Please log in."); 
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["image"])) {
