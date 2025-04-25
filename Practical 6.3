@@ -1,0 +1,45 @@
+PracƟcal 6.3.A 
+
+<?php 
+funcƟon generateRandomNumber($min, $max) { 
+return rand($min, $max); 
+}
+$min = 10; 
+$max = 100; 
+echo "Random number between $min and $max: " . generateRandomNumber($min, $max) . "<br>"; 
+?> 
+
+PracƟcal 6.3.B 
+
+<?php 
+funcƟon displayNumberConversions($decimal) { 
+echo "Decimal: $decimal<br>"; 
+echo "Binary: " . decbin($decimal) . "<br>"; 
+echo "Octal: " . decoct($decimal) . "<br>"; 
+ echo "Hexadecimal: " . dechex($decimal) . "<br>"; 
+} 
+ 
+$decimalNumber = 255; 
+displayNumberConversions($decimalNumber); 
+?> 
+
+PracƟcal 6.3.C 
+
+<?php 
+funcƟon displayTrigFuncƟons($angleInDegrees) { 
+ 
+ $angleInRadians = deg2rad($angleInDegrees); 
+ 
+ $sinValue = sin($angleInRadians); 
+ $cosValue = cos($angleInRadians); 
+ $tanValue = tan($angleInRadians); 
+ 
+ echo "Angle: $angleInDegrees degrees<br>"; 
+ echo "Sin: " . $sinValue . "<br>"; 
+ echo "Cos: " . $cosValue . "<br>"; 
+ echo "Tan: " . $tanValue . "<br>"; 
+} 
+ 
+$angle = 45; 
+displayTrigFuncƟons($angle); 
+?>
